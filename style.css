@@ -1,0 +1,197 @@
+:root {
+    --defaultDark: #A19F9F;
+    --defaultLight: #C4C4C4;
+    --main: #C4C4C4;
+    --themeDark: #185522;
+    --themeMedium: #5E7C63;
+    --themeLight: #689870;
+    --themeLighter: #B1CDB5;
+    --heroText: white;
+    --structureDelay: 1s;
+    --contentDelay: 500ms;
+  }
+  
+  body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .btnWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  button {
+      width: 100px;
+      height: 100px;
+      transition: 1s ease;
+  }
+
+  .mainWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+
+  /* items to animate */
+  #Navbar {
+    opacity: 0;
+    --order: 0;
+  }
+  #structure {
+    opacity: 0;
+    animation-delay: calc(var(--order)*1s);
+    --order: 1;
+}
+  #Hero {
+    opacity: 0;
+    animation-delay: calc(var(--order)*1s);
+    --order: 1;
+  }
+  #Main {
+    opacity: 1;
+  }
+  #Footer {
+    opacity: 0;
+    animation-delay: calc(var(--order)*1s);
+    --order: 2;
+  }
+  #and {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 6;
+}
+  #cta {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 6;
+  }
+  #nav3 {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 7;
+  }
+  #nav2 {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 8;
+  }
+  #nav1 {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 9;
+  }
+  #logo {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 10;
+  }
+  #heroImgAfter {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 11;
+  }
+  #title {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 12;
+  }
+  #tagline {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 13;
+  }
+  #content {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 14;
+}
+  #video {
+      opacity: 0;
+      animation-delay: calc(var(--order)*500ms);
+      --order: 14;
+  }
+  #mainText {
+      opacity: 0;
+      animation-delay: calc(var(--order)*500ms);
+      --order: 14;
+  }
+  #footerP1 {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 15;
+  }
+  #footerP2 {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 16;
+  }
+  #footerP3 {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 17;
+  }
+  #btn2 {
+    opacity: 0;
+    animation-delay: calc(var(--order)*500ms);
+    --order: 18;
+  }
+
+  /* no delay */
+  #customization {
+      opacity: 0;
+  }
+
+
+
+  .animateUp {
+    animation: ease 2s forwards 1 fadeUp; 
+  }
+  .animateRight {
+    animation: ease 2s forwards 1 fadeRight; 
+  }
+  .animateLeft {
+    animation: ease 2s forwards 1 fadeLeft; 
+  }
+  
+  @keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(150%);
+      }
+      40%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+  @keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150%);
+      }
+      40%, 100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  @keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      40%, 100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  
